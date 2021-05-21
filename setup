@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# setup thingsboards data and logs dirs
+# thingsboards data and logs dirs
 mkdir -p ~/.mytb-data && sudo chown -R 799:799 ~/.mytb-data
 mkdir -p ~/.mytb-logs && sudo chown -R 799:799 ~/.mytb-logs
 
-# setup iotgw conf dir
+# iotgw conf dir
 mkdir -p ~/.tb-gateway/config
-
 cp tb-gateway-conf/* ~/.tb-gateway/config
+
+# mosquitto conf
+mkdir -p ~/.mosquitto/data
+mkdir -p ~/.mosquitto/config
+cp mosquitto-conf/mosquitto.conf ~/.mosquitto/config
+cp mosquitto-conf/passwd ~/.mosquitto/data

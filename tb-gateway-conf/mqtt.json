@@ -1,13 +1,13 @@
 {
     "broker": {
         "name": "Default Local Broker",
-        "host": "192.168.1.198",
+        "host": "<local_ip>",
         "port": 1885,
         "clientId": "ThingsBoard_gateway",
         "security": {
             "type": "basic",
-            "username": "treon",
-            "password": "treon"
+            "username": "<username>",
+            "password": "<password>"
         }
     },
     "mapping": [
