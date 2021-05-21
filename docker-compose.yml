@@ -52,7 +52,7 @@ services:
     restart: always
     image: eclipse-mosquitto
     ports:
-      - 1885:1883
+      - "1885:1883"
     volumes:
       - ~/.mosquitto/data:/mosquitto/data
       - ~/.mosquitto/logs:/mosquitto/log
