@@ -45,7 +45,6 @@ services:
       - type: bind
         source: ~/.tb-gateway/config
         target: /thingsboard_gateway/config
-        read_only: true
       - ~/.tb-gateway/logs:/thingsboard_gateway/logs
       - ~/.tb-gateway/extensions:/thingsboard_gateway/extensions
   eclipse-mosquitto:
